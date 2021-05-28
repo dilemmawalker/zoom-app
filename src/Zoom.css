@@ -1,0 +1,49 @@
+ /* #zmmtg-root {
+    width: 10%;
+    height: 10%;
+     position: center; 
+     top: 0;
+    left: 0; 
+     background-color: orange;
+    color:orange;
+}  */
+#zmmtg-root, .meeting-client, .meeting-client-inner {
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    background-color: red;
+   
+    
+  }
+  body > #zmmtg-root {
+    display: none;
+  }
+  #wc-footer {
+    /* bottom: auto !important; */
+    /* height : 100px !important; */
+    width: 1000px !important;
+    color: blue;
+  }
+  
+  #dialog-join {
+    width: 1000px !important;
+    background-color: yellow;
+    color: yellow;
+  }
+  
+  #sv-active-video, .active-main, #sv-active-speaker-view, .main-layout {
+    height: 400px !important;
+    width: 1000px !important;
+    background-color: yellow;
+    color: blue;
+  }
+  
+  .suspension-window {
+    transform: translate(-444px, 10px) !important;
+    background-color: green;
+  }
+  
+  #dialog-invite {
+    display: none;
+    color: brown;
+  }

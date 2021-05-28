@@ -23,16 +23,17 @@ function generateSignature(apiKey, apiSecret, meetingNumber, role) {
   });
 }
 
-var apiKey = "hrUiRGINSlSbD3-9Oivp6A";
-var apiSecret = "sNO29VSqzxzZf7XrJpr0wHuhmdcxyuCsmDp6";
-var meetingNumber = 6689101814;
+
+var apiKey = "obTWPCx1psnWrDJVQZSSPVcbFbLSifoCe6tn";
+var apiSecret = "ZYAbdPDGTpP8wnELMClzPeZLepZxFL6WUEBl";
+var meetingNumber = 75888339716;
 var leaveUrl = "http://localhost:3000/"; // our redirect url
 var userName = "Yatin";
-var userEmail = "abc@gmail.com"; 
-var passWord = "abc";
+var userEmail = "yashhanda500@gmail.com";
+var passWord = "yhdb99";
 
 var signature = "";
-generateSignature(apiKey, apiSecret, meetingNumber, 0).then((res) => {
+generateSignature(apiKey, apiSecret, meetingNumber, 1).then((res) => {
   signature = res;
 }); // need to generate based on meeting id - using - role by default 0 = javascript
 
@@ -49,7 +50,8 @@ const Zoom = () => {
   const showZoomDIv = () => {
     document.getElementById("zmmtg-root").style.display = "block";
   };
-
+  
+  <div id="zmmtg-root"></div>
   const initiateMeeting = () => {
     ZoomMtg.init({
       leaveUrl: leaveUrl,
